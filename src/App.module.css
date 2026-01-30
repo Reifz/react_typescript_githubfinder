@@ -1,0 +1,13 @@
+.App {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.App h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.input[type="text"] {
+  color: #000 !important;
+}

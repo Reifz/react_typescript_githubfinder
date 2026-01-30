@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Blinker', sans-serif;
+    
+}
+
+body {
+    background-color: #0b0c30;
+    color: #fcfcfc;
+    padding: 2rem;
+}
+
+p {
+    text-align: center;
+     font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
