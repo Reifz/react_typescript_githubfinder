@@ -13,17 +13,20 @@ const Repos = () => {
     const [isLoading,setIsLoading] = useState(false);
 
     useEffect(()=> {
+
         setIsLoading(true);
 
         const loadRepos = async function(username:string){
+
             const res = await fetch(`https://api.github.com/users/${username}/repos`);
             const data = await res.json();
-            console.log(data);
+           
             setIsLoading(false);
 
             let orderedRepos = data.sort(
                 (a:RepoProps,b:RepoProps)=>b.stargazers_count - a.stargazers_count
             );
+            
             orderedRepos = orderedRepos.slice(0,5);
             setRepos(orderedRepos);
         }

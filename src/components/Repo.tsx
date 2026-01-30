@@ -4,7 +4,9 @@ import { BsCodeSlash } from 'react-icons/bs';
 import { AiOutlineStar, AiOutlineFork} from 'react-icons/ai';
 import { RiGitRepositoryLine } from 'react-icons/ri';
 import classes from "./Repo.module.css";
+
 const Repo = ({name,language,html_url,forks_count,stargazers_count}:RepoProps) => {
+  
   return (
     <div className={classes.repo}>
         <h3>{name}</h3>
@@ -16,6 +18,7 @@ const Repo = ({name,language,html_url,forks_count,stargazers_count}:RepoProps) =
         </div>
     </div>
   )
+
 }
 
 export default Repo

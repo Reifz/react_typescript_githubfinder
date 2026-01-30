@@ -4,6 +4,7 @@ import Search from '../components/Search';
 import User from '../components/User';
 import Error from '../components/Error';
 import Loader from '../components/Loader';
+
 const Home = () => {
 
     const [user,setUser] = useState<UserProps | null>(null);
@@ -15,6 +16,7 @@ const Home = () => {
         setError(false);
         setUser(null);
         setIsLoading(true);
+
         const res = await fetch(`https://api.github.com/users/${userName}`);
         
         const data = await res.json();
@@ -23,6 +25,7 @@ const Home = () => {
           setError(true);
           return;
         }
+        
         const {avatar_url,login,location,followers,following} = data;
         
         const userData : UserProps = {

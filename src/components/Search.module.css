@@ -1,6 +1,6 @@
 .search {
     background-color: #1e2b7577;
-    padding:2rem;
+    padding: 2rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -9,29 +9,29 @@
     gap: 1rem;
     margin-bottom: 1.5rem;
 }
-.search p{
+
+.search p {
     color: #ffffff;
 }
 
-.search_container{
-    display: flex;
-    gap: 0.5rem;
-}
-.search_container  input{
+.search_container {
     display: flex;
     gap: 0.5rem;
 }
 
-.search_container button{
-  padding: .6rem;
-  border-radius: 3px;
-  border:none;
-  color:#ffffff;
+.search_container input {
+    display: flex;
+    gap: 0.5rem;
 }
 
-.search_container button{
- background-color: #080b1b;
- cursor: pointer;
+.search_container button {
+    padding: .6rem;
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
 }
 
-
+.search_container button {
+    background-color: #080b1b;
+    cursor: pointer;
+}

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import classes from "./User.module.css";
 
 const User = ({avatar_url,login,location,followers,following}: UserProps) => {
+ 
   return (
     <div className={classes.user}>
       <img src={avatar_url} alt={login}></img>
@@ -28,6 +29,7 @@ const User = ({avatar_url,login,location,followers,following}: UserProps) => {
       <Link to={`/repos/${login}`}>Ver melhores projetos</Link>
     </div>
   )
+  
 }
 
 export default User
